@@ -10,13 +10,21 @@ In most usecases both will be used together to generate the channel list for ws-
 Supporting up to 4x SDR, several different setups can be easily configured:
 
 +----------+----------+----------+
+
 ! Fixed CH ! Variable ! ScanSDR  ! 
+
 +----------+----------+----------+
-!  RTL1-4  !  none    !  non     !
+
+!  RTL1-4  !  none    !  none    !
+
 +----------+----------+----------+
+
 !  none    !  RTL0-2  !  RTL3    !
+
 +----------+----------+----------+
+
 !  RTL0    !  RTL1    !  RTL3    !
+
 +----------+----------+----------+
 
 or any other valid configuration for up to 4 SDR-Receiver. 
