@@ -11,7 +11,7 @@ https://github.com/whallmann/SondenUtils
 Using this script for a long time with several different setups, I made it fully configurable in the same way the config file from ws-starter used by https://wetterson.de is being organized.
 In most usecases both tools will be used together to generate the channel list for ws-starter by the ws-scanner.
 
-<b><u>Supporting up to 4x SDR, several different setups can be easily configured:</u></b>:
+<b><u>Supporting up to 4x SDR, several different setups can be easily configured, examples:</u></b>
 ```
 +----------+----------+----------+
 ! Fixed CH ! Variable ! ScanSDR  !
@@ -20,7 +20,7 @@ In most usecases both tools will be used together to generate the channel list f
 !----------+----------+----------+
 !  none    !  RTL0-2  !  RTL3    !
 +----------+----------+----------+
-!  RTL0    !  RTL1    !  RTL3    !
+!  RTL0,2  !  RTL1    !  RTL3    !
 +----------+----------+----------+
 ```
 
