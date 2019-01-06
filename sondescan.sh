@@ -92,7 +92,7 @@ function start_scanner {
 
 for i in ${scanner_sdr[@]}; do
   ## get scan config
-  echo "--------------------------------------------------------------------------------" >> ${LOGFILE}
+  echo "-------------------------------------------"
   echo "Get Scanner config:"
   eval scan_device="\${$i[device]}" 
   eval scan_ppm="\${$i[ppm]}" 
@@ -105,6 +105,7 @@ for i in ${scanner_sdr[@]}; do
   echo "scan_device= " ${scan_device}
   echo "scan_gain  = " ${scan_gain}
   echo "hold_timer = " ${hold_timer}
+  echo "-------------------------------------------"
 done
 
 
@@ -121,7 +122,7 @@ for i in ${receive_sdr[@]}; do
   echo "rx_device= " ${rx_device}
   echo "rx_start = " ${rx_start}
   echo "rx_stop  = " ${rx_stop}  
-
+  echo "-------------------------------------------"
   echo "Start scanner task ..."
   start_scanner
 done
