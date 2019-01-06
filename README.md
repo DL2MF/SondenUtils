@@ -36,23 +36,23 @@ or any other valid configuration for up to 4 SDR-Receiver.
 Sample config with 4 SDR:
 =========================
 <code>
-Sample configuration with 4x SDR, 1x assigned to a fix CH table, 2x with scanned CH, 1x used only for scanning task:
+Sample configuration with 4x SDR, 1x assigned to a fix CH table, 2x with scanned CH, 1x used only for scanning task
 
-declare -A rtl0=( [device]=0 [ppm]=0 [gain]=38.6 [scan_start]=90M [scan_stop]=92M [scan_step]=1000 )
-declare -A rtl1=( [device]=1 [ppm]=0 [gain]=38.6 [scan_start]=92M [scan_stop]=94M [scan_step]=1000 )
+declare -A rtl0=( [device]=0 [ppm]=0 [gain]=38.6 [scan_start]=401M [scan_stop]=403M [scan_step]=1000 )
+declare -A rtl1=( [device]=1 [ppm]=0 [gain]=38.6 [scan_start]=403M [scan_stop]=405M [scan_step]=1000 )
 
 Number of active RX RTL-SDR must be added to array:
  -- caution: in this config rtl0 is assigned to a fixed channel configuration!!!
 receive_sdr=( rtl1 rtl2 )
 
-Assign RTL-SDR for scanner task:
+Assign RTL-SDR for scanner task
 declare -A rtl3=( [device]=3 [ppm]=0 [gain]=38.6 [afc]=10 [auto_snlevel]=5 [band_width]=15000 [hold_timer]=15 )
 scanner_sdr=( rtl3 )
 </code>
 
 Parameters:
 ===========
-* declare -A   - add a RTLSDR receiver to the config array
+* declare -A name  - add a RTLSDR receiver to the config array, assigned name is being used in receive_/scanner_sdr param
  - device - physical device number on the USB bus (use rtl_test to check your present devices)
  - ppm - frequency correction value
  - gain - supported RX gain value (different gains ar e used by RTL820 / E4000!)
