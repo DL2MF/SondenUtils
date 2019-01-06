@@ -11,8 +11,8 @@ https://github.com/whallmann/SondenUtils
 Using this script for a long time with several different setups, I made it fully configurable in the same way the config file from ws-starter used by https://wetterson.de is being organized.
 In most usecases both tools will be used together to generate the channel list for ws-starter by the ws-scanner.
 
-<b><u>Supporting up to 4x SDR, several different setups can be easily configured:</u></b>
-...
+<b><u>Supporting up to 4x SDR, several different setups can be easily configured:</u></b>:
+```
 +----------+----------+----------+
 ! Fixed CH ! Variable ! ScanSDR  !
 +----------+----------+----------+
@@ -22,13 +22,13 @@ In most usecases both tools will be used together to generate the channel list f
 +----------+----------+----------+
 !  RTL0    !  RTL1    !  RTL3    !
 +----------+----------+----------+
-...
+```
 
 or any other valid configuration for up to 4 SDR-Receiver.
 
 Sample config with 4 SDR:
 =========================
-...
+```
 Sample configuration with 4x SDR, 1x assigned to a fix CH table, 2x with scanned CH, 1x used only for scanning task
 
 declare -A rtl0=( [device]=0 [ppm]=0 [gain]=38.6 [scan_start]=401M [scan_stop]=403M [scan_step]=1000 )
@@ -41,7 +41,7 @@ receive_sdr=( rtl1 rtl2 )
 Assign RTL-SDR for scanner task
 declare -A rtl3=( [device]=3 [ppm]=0 [gain]=38.6 [afc]=10 [auto_snlevel]=5 [band_width]=15000 [hold_timer]=15 )
 scanner_sdr=( rtl3 )
-...
+```
 
 Parameters:
 ===========
