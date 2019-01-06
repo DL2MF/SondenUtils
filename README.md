@@ -15,13 +15,21 @@ In most usecases both tools will be used together to generate the channel list f
 
 <code>
 +----------+----------+----------+
+ 
 ! Fixed CH ! Variable ! ScanSDR  ! 
+
 +----------+----------+----------+
+
 !  RTL1-4  !  none    !  none    !
+
 +----------+----------+----------+
+
 !  none    !  RTL0-2  !  RTL3    !
+
 +----------+----------+----------+
+
 !  RTL0    !  RTL1    !  RTL3    !
+
 +----------+----------+----------+
 </code>
 
