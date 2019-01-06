@@ -13,23 +13,17 @@ In most usecases both tools will be used together to generate the channel list f
 
 <b><u>Supporting up to 4x SDR, several different setups can be easily configured:</u></b>
 
+<code>
 +----------+----------+----------+
-
 ! Fixed CH ! Variable ! ScanSDR  ! 
-
 +----------+----------+----------+
-
 !  RTL1-4  !  none    !  none    !
-
 +----------+----------+----------+
-
 !  none    !  RTL0-2  !  RTL3    !
-
 +----------+----------+----------+
-
 !  RTL0    !  RTL1    !  RTL3    !
-
 +----------+----------+----------+
+</code>
 
 or any other valid configuration for up to 4 SDR-Receiver.
 
